@@ -22,7 +22,7 @@ function Navbar() {
             <div className="flex items-center">
               <span className="mr-2"></span>
               {session?<button  onClick={() => signOut()}
-  className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Signout</button>:<><button className='p-3 bg-blue-400 rounded-sm' onClick={()=>redirect('/login')}>User Login</button> <button onClick={()=>redirect('/admin/login')} className='p-3 ml-4 bg-blue-800 text-white rounded-sm' >Admin login</button></>}
+  className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Signout</button>:<><button className='p-3 bg-blue-400 rounded-sm' onClick={()=>redirect('/user/login')}>User Login</button> <button onClick={()=>redirect('/admin/login')} className='p-3 ml-4 bg-blue-800 text-white rounded-sm' >Admin login</button></>}
             </div>
           </div>
         </header>
